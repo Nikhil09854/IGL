@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- SEO Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content=" content="india's got latent , india's got latent ranveer allahbadia episode , india's got latent all episodes , india's got latent samay raina">
+    <meta name="description" content=" content="india's got latent , india's got latent ranveer allahbadia episode , india's got latent all episodes , india's got latent samay raina.">
+    <meta name="keywords" content=" content="india's got latent , india's got latent ranveer allahbadia episode , india's got latent all episodes , india's got latent samay raina">
+    <meta name="author" content="Video  content="india's got latent , india's got latent ranveer allahbadia episode , india's got latent all episodes , india's got latent samay raina">
+    
+    <!-- Social Media Meta -->
+    <meta property="og:type" content="video.tv_show">
+    <meta property="og:site_name" content="Video Series Platform">
+    <meta name="twitter:card" content="player">
+    <meta name="twitter:site" content="@videoseries">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://yourdomain.com/series">
+    
+    <title>Complete Video Series | Watch All Episodes</title>
+    
+    <style>
+        :root {
+            --primary: #3498db;
+            --dark: #2c3e50;
+            --light: #ecf0f1;
+            --gray: #95a5a6;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--dark), #34495e);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .logo {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+        
+        .nav-link:hover, .nav-link.active {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            margin-bottom: 30px;
+            background-color: #000;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+        
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .video-info {
+            background-color: white;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: var(--shadow);
+        }
+        
+        .video-title {
+            color: var(--dark);
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+        }
+        
+        .video-description {
+            color: #555;
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+        
+        .video-meta {
+            display: flex;
+            justify-content: space-between;
+            color: var(--gray);
+            font-size: 0.9rem;
+            margin-top: 15px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .episode-controls {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+        
+        .episode-btn {
+            padding: 10px 20px;
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+            font-weight: 600;
+        }
+        
+        .episode-btn:hover {
+            background-color: #2980b9;
+        }
+        
+        .episode-btn:disabled {
+            background-color: var(--gray);
+            cursor: not-allowed;
+        }
+        
+        .ad-container {
+            width: 100%;
+            margin: 30px 0;
+            text-align: center;
+            background-color: #f1f1f1;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px dashed #ccc;
+        }
+        
+        .ad-label {
+            font-size: 0.8rem;
+            color: var(--gray);
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+        
+        .episodes-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .episode-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+        
+        .episode-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .episode-thumb {
+            width: 100%;
+            height: 140px;
+            object-fit: cover;
+        }
+        
+        .episode-info {
+            padding: 15px;
+        }
+        
+        .episode-info h3 {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: var(--dark);
+        }
+        
+        .episode-info p {
+            font-size: 0.9rem;
+            color: var(--gray);
+        }
+        
+        footer {
+            background-color: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .footer-links a {
+            color: var(--light);
+            text-decoration: none;
+        }
+        
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Loading spinner */
+        .loader {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid var(--primary);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            z-index: 10;
+        }
+        
+        @keyframes spin {
+            0% { transform: translate(-50%, -50%) rotate(0deg); }
+            100% { transform: translate(-50%, -50%) rotate(360deg); }
+        }
+        
+        @media (max-width: 768px) {
+            .video-title {
+                font-size: 1.5rem;
+            }
+            
+            .episodes-list {
+                grid-template-columns: 1fr;
+            }
+            
+            .episode-controls {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .episode-btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Video Series</div>
+            <div class="nav-links" id="navLinks">
+                <!-- Dynamically generated navigation -->
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <!-- Top Ad -->
+        <div class="ad-container">
+            <div class="ad-label">Advertisement</div>
+            <!-- Replace with your AdSense code -->
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_PUBLISHER_ID" crossorigin="anonymous"></script>
+            <!-- Top Banner Ad -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-YOUR_PUBLISHER_ID"
+                 data-ad-slot="YOUR_TOP_SLOT"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+        
+        <!-- Video Player Section -->
+        <div class="video-container">
+            <div class="loader" id="videoLoader"></div>
+            <iframe id="videoPlayer" src="" frameborder="0" allowfullscreen allow="autoplay; encrypted-media"></iframe>
+        </div>
+        
+        <!-- Episode Controls -->
+        <div class="episode-controls">
+            <button id="prevBtn" class="episode-btn" disabled>Previous Episode</button>
+            <button id="nextBtn" class="episode-btn">Next Episode</button>
+        </div>
+        
+        <!-- Video Info -->
+        <div class="video-info">
+            <h1 class="video-title" id="episodeTitle">Episode Title</h1>
+            <p class="video-description" id="episodeDescription">Episode description will load here...</p>
+            <div class="video-meta">
+                <span id="episodeNumber">Episode 1</span>
+                <span id="episodeDate">Released: June 2023</span>
+                <span id="episodeViews">Views: 1,234,567</span>
+            </div>
+        </div>
+        
+        <!-- Middle Ad -->
+        <div class="ad-container">
+            <div class="ad-label">Advertisement</div>
+            <!-- Replace with your AdSense code -->
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_PUBLISHER_ID" crossorigin="anonymous"></script>
+            <!-- Middle Rectangle Ad -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-YOUR_PUBLISHER_ID"
+                 data-ad-slot="YOUR_MIDDLE_SLOT"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+        
+        <!-- All Episodes List -->
+        <h2>All Episodes</h2>
+        <div class="episodes-list" id="episodesList">
+            <!-- Dynamically generated episodes -->
+        </div>
+        
+        <!-- Bottom Ad -->
+        <div class="ad-container">
+            <div class="ad-label">Advertisement</div>
+            <!-- Replace with your AdSense code -->
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_PUBLISHER_ID" crossorigin="anonymous"></script>
+            <!-- Bottom Banner Ad -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-YOUR_PUBLISHER_ID"
+                 data-ad-slot="YOUR_BOTTOM_SLOT"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Video Series Platform. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="/privacy">Privacy Policy</a>
+                <a href="/terms">Terms of Service</a>
+                <a href="/contact">Contact Us</a>
+                <a href="/about">About</a>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Enhanced Video Series Platform
+        document.addEventListener('DOMContentLoaded', function() {
+            // Episode data with enhanced metadata
+            const episodes = [
+                {
+                    id: 1,
+                    title: "Episode 1: The Beginning",
+                    description: "In the first episode, we introduce the main characters and set up the story that will unfold throughout the series.",
+                    videoId: "x9hni6y",
+                    date: "June 1, 2023",
+                    views: "1,234,567",
+                    thumb: "https://via.placeholder.com/300x170/3498db/ffffff?text=Episode+1",
+                    duration: "1hr+",
+                    tags: ["introduction", "characters", "setup"]
+                },
+                {
+                    id: 2,
+                    title: "Episode 2: Rising Action",
+                    description: "The plot thickens as our characters face their first major challenge in this exciting second episode.",
+                    videoId: "x9enawi",
+                    date: "June 8, 2023",
+                    views: "987,654",
+                    thumb: "https://via.placeholder.com/300x170/e74c3c/ffffff?text=Episode+2",
+                    duration: "1hr+",
+                    tags: ["action", "challenge", "development"]
+                },
+                {
+                    id: 3,
+                    title: "Episode 3: The Conflict",
+                    description: "Tensions rise as the main conflict of the series begins to take shape in this dramatic third episode.",
+                    videoId: "x9hs6km",
+                    date: "June 15, 2023",
+                    views: "876,543",
+                    thumb: "https://via.placeholder.com/300x170/2ecc71/ffffff?text=Episode+3",
+                    duration: "1hr+",
+                    tags: ["conflict", "tension", "drama"]
+                },
+                {
+                    id: 4,
+                    title: "Episode 4: Turning Point",
+                    description: "A major turning point occurs that changes the direction of the story in unexpected ways.",
+                    videoId: "x9gyqpo",
+                    date: "June 22, 2023",
+                    views: "765,432",
+                    thumb: "https://via.placeholder.com/300x170/9b59b6/ffffff?text=Episode+4",
+                    duration: "1hr+",
+                    tags: ["turning point", "twist", "development"]
+                },
+                {
+                    id: 5,
+                    title: "Episode 5: The Reveal",
+                    description: "Secrets are revealed that change everything our characters thought they knew about their situation.",
+                    videoId: "x9h0h2y",
+                    date: "June 29, 2023",
+                    views: "654,321",
+                    thumb: "https://via.placeholder.com/300x170/f1c40f/ffffff?text=Episode+5",
+                    duration: "1hr+",
+                    tags: ["reveal", "secrets", "plot twist"]
+                },
+                {
+                    id: 6,
+                    title: "Episode 6: Consequences",
+                    description: "The characters deal with the fallout from the revelations of the previous episode.",
+                    videoId: "x9h64y6",
+                    date: "July 6, 2023",
+                    views: "543,210",
+                    thumb: "https://via.placeholder.com/300x170/1abc9c/ffffff?text=Episode+6",
+                    duration: "1hr+",
+                    tags: ["consequences", "fallout", "drama"]
+                },
+                {
+                    id: 7,
+                    title: "Episode 7: The Plan",
+                    description: "Our heroes devise a plan to overcome the challenges they're facing, but will it work?",
+                    videoId: "x9h8syi",
+                    date: "July 13, 2023",
+                    views: "432,109",
+                    thumb: "https://via.placeholder.com/300x170/e67e22/ffffff?text=Episode+7",
+                    duration: "1hr+",
+                    tags: ["strategy", "plan", "development"]
+                },
+                {
+                    id: 8,
+                    title: "Episode 8: Execution",
+                    description: "The plan is put into action with unexpected results that no one saw coming.",
+                    videoId: "x9hatww",
+                    date: "July 20, 2023",
+                    views: "321,098",
+                    thumb: "https://via.placeholder.com/300x170/34495e/ffffff?text=Episode+8",
+                    duration: "1hr+",
+                    tags: ["action", "execution", "twist"]
+                },
+                {
+                    id: 9,
+                    title: "Episode 9: The Fallout",
+                    description: "After the events of the previous episode, the characters must pick up the pieces.",
+                    videoId: "x9hdpr8",
+                    date: "July 27, 2023",
+                    views: "210,987",
+                    thumb: "https://via.placeholder.com/300x170/7f8c8d/ffffff?text=Episode+9",
+                    duration: "1hr+",
+                    tags: ["fallout", "recovery", "drama"]
+                },
+                {
+                    id: 10,
+                    title: "Episode 10: The Final Push",
+                    description: "With the end in sight, our characters make their final push toward resolution.",
+                    videoId: "x9he9t0",
+                    date: "August 3, 2023",
+                    views: "109,876",
+                    thumb: "https://via.placeholder.com/300x170/3498db/ffffff?text=Episode+10",
+                    duration: "1hr+",
+                    tags: ["climax", "final push", "resolution"]
+                },
+                {
+                    id: 11,
+                    title: "Episode 11: The Climax",
+                    description: "Everything has been leading to this moment - the dramatic climax of our story.",
+                    videoId: "x9hi3a0",
+                    date: "August 10, 2023",
+                    views: "98,765",
+                    thumb: "https://via.placeholder.com/300x170/e74c3c/ffffff?text=Episode+11",
+                    duration: "1hr+",
+                    tags: ["climax", "drama", "action"]
+                },
+                {
+                    id: 12,
+                    title: "Episode 12: The Resolution",
+                    description: "The final episode wraps up all the loose ends and brings our story to a satisfying conclusion.",
+                    videoId: "x9hkuj4",
+                    date: "August 17, 2023",
+                    views: "87,654",
+                    thumb: "https://via.placeholder.com/300x170/2ecc71/ffffff?text=Episode+12",
+                    duration: "1hr+",
+                    tags: ["resolution", "conclusion", "finale"]
+                },
+                {
+                    id: 13,
+                    title: "Bonus Episode: Behind the Scenes",
+                    description: "A special bonus episode showing how the series was made, with interviews from the cast and crew.",
+                    videoId: "x9i0546",
+                    date: "August 24, 2023",
+                    views: "76,543",
+                    thumb: "https://via.placeholder.com/300x170/9b59b6/ffffff?text=Bonus+Episode",
+                    duration: "1hr+",
+                    tags: ["behind the scenes", "making of", "interviews"]
+                }
+            ];
+
+            // DOM elements
+            const videoPlayer = document.getElementById('videoPlayer');
+            const videoLoader = document.getElementById('videoLoader');
+            const episodeTitle = document.getElementById('episodeTitle');
+            const episodeDescription = document.getElementById('episodeDescription');
+            const episodeNumber = document.getElementById('episodeNumber');
+            const episodeDate = document.getElementById('episodeDate');
+            const episodeViews = document.getElementById('episodeViews');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            const episodesList = document.getElementById('episodesList');
+            const navLinks = document.getElementById('navLinks');
+            
+            // Current episode index
+            let currentEpisodeIndex = 0;
+            
+            // View count tracking
+            let viewCounts = JSON.parse(localStorage.getItem('episodeViews')) || {};
+            
+            // Initialize the platform
+            function init() {
+                // Check URL hash for episode number
+                const hash = window.location.hash;
+                if (hash) {
+                    const episodeId = parseInt(hash.substring(1));
+                    const foundIndex = episodes.findIndex(ep => ep.id === episodeId);
+                    if (foundIndex !== -1) {
+                        currentEpisodeIndex = foundIndex;
+                    }
+                }
+                
+                loadEpisode(currentEpisodeIndex);
+                renderEpisodesList();
+                renderNavLinks();
+                updateButtons();
+                
+                // Track initial view
+                trackView(episodes[currentEpisodeIndex].id);
+            }
+            
+            // Load an episode by index
+            function loadEpisode(index) {
+                const episode = episodes[index];
+                
+                // Show loading spinner
+                videoLoader.style.display = 'block';
+                videoPlayer.style.opacity = '0';
+                
+                // Update video player
+                videoPlayer.src = `https://www.dailymotion.com/embed/video/${episode.videoId}?autoplay=0`;
+                
+                // When video loads, hide spinner
+                videoPlayer.onload = function() {
+                    videoLoader.style.display = 'none';
+                    videoPlayer.style.opacity = '1';
+                };
+                
+                // Update episode info
+                episodeTitle.textContent = episode.title;
+                episodeDescription.textContent = episode.description;
+                episodeNumber.textContent = `Episode ${episode.id}`;
+                episodeDate.textContent = `Released: ${episode.date}`;
+                
+                // Get view count from localStorage or use default
+                const views = viewCounts[episode.id] ? formatNumber(viewCounts[episode.id]) : episode.views;
+                episodeViews.textContent = `Views: ${views}`;
+                
+                // Update URL
+                window.location.hash = `#${episode.id}`;
+                
+                // Update document title
+                document.title = `${episode.title} | Video Series`;
+                
+                // Update active nav link
+                updateActiveNavLink();
+                
+                // Scroll to top smoothly
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+                
+                // Update buttons
+                updateButtons();
+                
+                // Track view
+                trackView(episode.id);
+                
+                // Update schema markup
+                updateSchemaMarkup(episode);
+            }
+            
+            // Track views in localStorage
+            function trackView(episodeId) {
+                viewCounts[episodeId] = (viewCounts[episodeId] || 0) + 1;
+                localStorage.setItem('episodeViews', JSON.stringify(viewCounts));
+                
+                // Update view count display
+                const views = formatNumber(viewCounts[episodeId]);
+                episodeViews.textContent = `Views: ${views}`;
+            }
+            
+            // Format large numbers with commas
+            function formatNumber(num) {
+                return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            }
+            
+            // Render all episodes in the list
+            function renderEpisodesList() {
+                episodesList.innerHTML = '';
+                
+                episodes.forEach(episode => {
+                    const episodeCard = document.createElement('div');
+                    episodeCard.className = 'episode-card';
+                    
+                    // Get view count from localStorage or use default
+                    const views = viewCounts[episode.id] ? formatNumber(viewCounts[episode.id]) : episode.views;
+                    
+                    episodeCard.innerHTML = `
+                        <img src="${episode.thumb}" alt="${episode.title}" class="episode-thumb">
+                        <div class="episode-info">
+                            <h3>${episode.title}</h3>
+                            <p>${episode.date} • ${views} views • ${episode.duration}</p>
+                            <div class="tags" style="margin-top: 8px;">
+                                ${episode.tags.map(tag => `<span style="display: inline-block; background: #eee; padding: 2px 6px; border-radius: 10px; font-size: 0.7rem; margin-right: 5px;">${tag}</span>`).join('')}
+                            </div>
+                        </div>
+                    `;
+                    
+                    episodeCard.addEventListener('click', () => {
+                        const index = episodes.findIndex(ep => ep.id === episode.id);
+                        if (index !== -1) {
+                            currentEpisodeIndex = index;
+                            loadEpisode(currentEpisodeIndex);
+                        }
+                    });
+                    
+                    episodesList.appendChild(episodeCard);
+                });
+            }
+            
+            // Render navigation links
+            function renderNavLinks() {
+                navLinks.innerHTML = '';
+                
+                episodes.forEach(episode => {
+                    const link = document.createElement('a');
+                    link.className = 'nav-link';
+                    link.href = `#${episode.id}`;
+                    link.textContent = `Ep ${episode.id}`;
+                    
+                    link.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        const index = episodes.findIndex(ep => ep.id === episode.id);
+                        if (index !== -1) {
+                            currentEpisodeIndex = index;
+                            loadEpisode(currentEpisodeIndex);
+                        }
+                    });
+                    
+                    navLinks.appendChild(link);
+                });
+            }
+            
+            // Update active nav link
+            function updateActiveNavLink() {
+                const links = document.querySelectorAll('.nav-link');
+                links.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.href.endsWith(`#${episodes[currentEpisodeIndex].id}`)) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+            
+            // Update prev/next buttons
+            function updateButtons() {
+                prevBtn.disabled = currentEpisodeIndex === 0;
+                nextBtn.disabled = currentEpisodeIndex === episodes.length - 1;
+            }
+            
+            // Event listeners
+            prevBtn.addEventListener('click', () => {
+                if (currentEpisodeIndex > 0) {
+                    currentEpisodeIndex--;
+                    loadEpisode(currentEpisodeIndex);
+                }
+            });
+            
+            nextBtn.addEventListener('click', () => {
+                if (currentEpisodeIndex < episodes.length - 1) {
+                    currentEpisodeIndex++;
+                    loadEpisode(currentEpisodeIndex);
+                }
+            });
+            
+            // Keyboard navigation
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowLeft' && !prevBtn.disabled) {
+                    prevBtn.click();
+                } else if (e.key === 'ArrowRight' && !nextBtn.disabled) {
+                    nextBtn.click();
+                }
+            });
+            
+            // Handle hash changes
+            window.addEventListener('hashchange', () => {
+                const hash = window.location.hash;
+                if (hash) {
+                    const episodeId = parseInt(hash.substring(1));
+                    const foundIndex = episodes.findIndex(ep => ep.id === episodeId);
+                    if (foundIndex !== -1 && foundIndex !== currentEpisodeIndex) {
+                        currentEpisodeIndex = foundIndex;
+                        loadEpisode(currentEpisodeIndex);
+                    }
+                }
+            });
+            
+            // Update schema markup for SEO
+            function updateSchemaMarkup(episode) {
+                // Remove old schema if exists
+                const oldSchema = document.querySelector('script[type="application/ld+json"]');
+                if (oldSchema) {
+                    oldSchema.remove();
+                }
+                
+                const schema = {
+                    "@context": "https://schema.org",
+                    "@type": "TVSeries",
+                    "name": "Complete Video Series",
+                    "description": "Watch all episodes of our exciting video series with this responsive player.",
+                    "numberOfEpisodes": episodes.length,
+                    "episode": episodes.map(ep => ({
+                        "@type": "TVEpisode",
+                        "episodeNumber": ep.id,
+                        "name": ep.title,
+                        "description": ep.description,
+                        "uploadDate": ep.date,
+                        "duration": `PT${ep.duration.replace(':', 'M')}S`,
+                        "interactionStatistic": {
+                            "@type": "InteractionCounter",
+                            "interactionType": "https://schema.org/WatchAction",
+                            "userInteractionCount": viewCounts[ep.id] || parseInt(ep.views.replace(/,/g, '')) || 1000
+                        },
+                        "associatedMedia": {
+                            "@type": "VideoObject",
+                            "contentUrl": `https://dai.ly/${ep.videoId}`,
+                            "embedUrl": `https://www.dailymotion.com/embed/video/${ep.videoId}`,
+                            "thumbnailUrl": ep.thumb
+                        }
+                    })),
+                    "currentEpisode": {
+                        "@type": "TVEpisode",
+                        "episodeNumber": episode.id,
+                        "name": episode.title,
+                        "description": episode.description,
+                        "uploadDate": episode.date,
+                        "duration": `PT${episode.duration.replace(':', 'M')}S`,
+                        "interactionStatistic": {
+                            "@type": "InteractionCounter",
+                            "interactionType": "https://schema.org/WatchAction",
+                            "userInteractionCount": viewCounts[episode.id] || parseInt(episode.views.replace(/,/g, '')) || 1000
+                        },
+                        "associatedMedia": {
+                            "@type": "VideoObject",
+                            "contentUrl": `https://dai.ly/${episode.videoId}`,
+                            "embedUrl": `https://www.dailymotion.com/embed/video/${episode.videoId}`,
+                            "thumbnailUrl": episode.thumb
+                        }
+                    }
+                };
+                
+                const script = document.createElement('script');
+                script.type = 'application/ld+json';
+                script.textContent = JSON.stringify(schema);
+                document.head.appendChild(script);
+            }
+            
+            // Initialize the platform
+            init();
+        });
+    </script>
+</body>
+</html>
